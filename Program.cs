@@ -48,6 +48,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+//2 lines  Serve static files (including index.html) from the wwwroot folder
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
 
 app.Run();
